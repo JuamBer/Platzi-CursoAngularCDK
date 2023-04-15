@@ -1,0 +1,23 @@
+<button
+  [type]="type"
+  class="w-full rounded px-5 py-2 text-sm font-medium text-white focus:ring-4"
+  [ngClass]="{
+    'bg-primary-700': color === 'primary',
+    'hover:bg-primary-800': color === 'primary',
+    'focus:ring-primary-300': color === 'primary',
+    'bg-secondary-700': color === 'secondary',
+    'hover:bg-secondary-800': color === 'secondary',
+    'focus:ring-secondary-300': color === 'secondary',
+    'bg-success-700': color === 'success',
+    'hover:bg-success-800': color === 'success',
+    'focus:ring-success-300': color === 'success',
+    'bg-warning-700': color === 'warning',
+    'hover:bg-warning-800': color === 'warning',
+    'focus:ring-warning-300': color === 'warning',
+    'bg-danger-700': color === 'danger',
+    'hover:bg-danger-800': color === 'danger',
+    'focus:ring-danger-300': color === 'danger'
+  }"
+>
+  <ng-content></ng-content>
+</button>
